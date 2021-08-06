@@ -4,13 +4,14 @@ import pandas as pd
 from spotipy.oauth2 import SpotifyClientCredentials
 from sklearn.preprocessing import MinMaxScaler
 
-client_id = '2165710263e64f34a3dd929564dd7785'
-client_secret = '2b9863996fc149c28e8f3ab1a6c39238'
+client_id = '' # client id
+client_secret = '' #client secret id
 
 client_cred_manager = SpotifyClientCredentials(client_id, client_secret)
 sp = spotipy.Spotify(client_credentials_manager = client_cred_manager)
 
-playlist_id = '2hDaF9WHWGDLGWVrreJ3EA'
+
+playlist_id = '' # enter playlist to analyze
 res = sp.playlist(playlist_id)
 
 ids = []
